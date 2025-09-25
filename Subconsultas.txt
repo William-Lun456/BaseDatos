@@ -1,8 +1,0 @@
-Subconsultas:
-Son consultas anidadas dentro de una principal donde se puede usar operadores de comparación
-y operadores lógicos, habiendo 3 tipos de subconsultas:
--S.Escalar: Devuelve un solo valor
--S.Tabla: Devuelve un conjunto de filas
--S.Correlacionada: Depende de la consulta principal
-En este tipo de subconsulta se puede usar UNION o UNION ALL, todos los tipos de JOIN,IN
-,EXISTS y NOT EXISTS, Operadores de Comparación.
