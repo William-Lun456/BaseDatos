@@ -1,0 +1,11 @@
+SABERES PREVIOS:
+-El procedimiento almacenado son un conjunto de instrucciones Transact-SQL  que se
+puede para realizar tareas. 
+-En SQL una función se declara con CREATE FUNCTION sirven para obtener datos o 
+realizar cálculos q se utilicen dentro de una transacción
+-Commit hace permanente los cambios de la transacción mientras q Rollback anula esos cambios 
+revirtiendo la BD a su estado anterior 
+UTILIDAD:
+-Los procedimientos almacenados beneficia el rendimiento pues hace q las instrucciones se compilen de una vez y se almacenen en la cache de la BD acelerando su ejecución
+-Cuando necesitas repetir cálculos evitando reescribir el mismo múltiples veces o modularizar tu código.
+-COMMIT Y ROLLBACK garantiza la integridad de los datos al permitir confirmar o deshacer una unidad de trabajo completa(transición) evitando q quede en estado inconsistente o corrupto
