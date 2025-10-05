@@ -1,0 +1,23 @@
+Por qué importan los JOIN:
+Cuando consultas datos distribuidos en varias tablas, los JOIN controlan qué filas aparecen y 
+cómo se emparejan. Saber elegir el tipo de join es clave para responder preguntas de negocio sin perder información ni contar de más/menos.
+Tipos de JOIN y cuándo usarlos
+
+INNER JOIN (intersección)
+Qué hace: Devuelve solo las filas que coinciden en ambas tablas según la condición ON.
+Cuándo usarlo: Cuando solo te interesan los casos donde existe relación (clientes con pedidos).
+Efecto: Excluye padres sin hijos y también hijos sin padre.
+
+LEFT JOIN (preserva la izquierda)
+Qué hace: Devuelve todas las filas de la tabla izquierda y, si no hay match en la derecha, rellena con NULL.
+Cuándo usarlo: Cuando no quieres perder los registros “principales” aunque no tengan relación (listar todos los clientes, tengan o no pedidos).
+Efecto: Permite distinguir “sin relación” por valores NULL en las columnas de la derecha.
+
+RIGHT JOIN (preserva la derecha)
+Qué hace: Simétrico a LEFT, pero preserva la tabla derecha.
+Cuándo usarlo: Menos común si ya estructuras tus consultas colocando la tabla “principal” a la izquierda; útil si 
+tu “principal” está a la derecha.
+
+CROSS JOIN (producto cartesiano)
+Qué hace: Combina todas las filas de una tabla con todas las de la otra (sin condición).
+Cuándo usarlo: Casos especiales (tablas de parámetros, calendarios, simulaciones)
