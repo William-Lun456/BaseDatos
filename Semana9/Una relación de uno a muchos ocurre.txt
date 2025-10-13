@@ -1,0 +1,25 @@
+Una relación de uno a muchos ocurre cuando un registro de una tabla puede estar vinculado con varios registros de otra. Por ejemplo, un cliente puede tener muchos pedidos, pero cada pedido pertenece solo a un cliente.
+
+Para manejar estas relaciones, se utilizan diferentes tipos de JOIN, que permiten combinar datos de varias tablas según condiciones comunes:
+
+CROSS JOIN (Producto cartesiano): combina cada fila de una tabla con todas las filas de otra. Se usa poco, ya que genera muchos resultados.
+
+SELECT * FROM Tabla1 CROSS JOIN Tabla2;
+
+
+INNER JOIN (Unión interna): muestra solo las filas que tienen coincidencias en ambas tablas según una columna en común. Es ideal para obtener datos relacionados directamente.
+
+SELECT * FROM Tabla1 INNER JOIN Tabla2 ON Tabla1.ColumnaID = Tabla2.ColumnaID;
+
+
+LEFT JOIN (Unión izquierda): devuelve todos los registros de la tabla de la izquierda, y solo los coincidentes de la derecha. Si no hay coincidencia, los valores de la derecha se muestran como NULL.
+
+SELECT * FROM Tabla1 LEFT JOIN Tabla2 ON Tabla1.ColumnaID = Tabla2.ColumnaID;
+
+
+RIGHT JOIN (Unión derecha): es lo opuesto al LEFT JOIN: muestra todos los registros de la tabla derecha y los coincidentes de la izquierda. Si no hay coincidencias, los valores de la izquierda son NULL.
+
+SELECT * FROM Tabla1 RIGHT JOIN Tabla2 ON Tabla1.ColumnaID = Tabla2.ColumnaID;
+
+
+En el ejemplo clásico, una tabla Clientes se relaciona con Pedidos por medio del campo ClienteID. Según el tipo de JOIN, se pueden obtener solo los clientes con pedidos, todos los clientes (aunque no hayan hecho pedidos), o todos los pedidos (aunque no tengan cliente asociado).
