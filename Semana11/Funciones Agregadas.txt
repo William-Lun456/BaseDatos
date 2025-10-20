@@ -1,0 +1,22 @@
+Funciones Agregadas:
+Algunas de las funciones agregadas mas usadas son SUM,COUNT,AVG,MAX,MIN igual usando clausulas GROUP BY y HAVING
+para analizar y sacar resúmenes informativos.
+
+Conocimientos Previos:
+¿Qué función agregada usarías para encontrar el valor máximo en una columna de números?
+Seria la funcion agregada max() ya que busca el dato máximo de una columna. 
+¿Cómo agruparías los datos de una tabla por una columna específica y calcular el total de una columna numérica para cada grupo?
+Usando GROUP BY y para calcular el total SUM
+¿Cuál es la diferencia entre las cláusulas WHERE y HAVING en una consulta SQL con funciones agregadas?
+La diferencia mas clara es que con where no se puede usar las funciones agregadas, mientras que con HAVING si.
+
+SUM():Calculo la suma de un conjunto de valores
+COUNT():Cuenta el numero de filas en un conjunto de resultados y también los valores no nulos
+AVG():Calcula el promedio de un conjunto de valores numéricos en una columna, ignorando valores null
+MAX():Busca el valor mas alto de una columna
+MIN():De igual manera que el max pero en cambio busca el valor mínimo
+GROUP BY: Agrupa filas del mismo valor de una columna, también se combina con Fun.Agregadas
+para obtener resúmenes de datos.
+HAVING: Se usa para filtrar los resultados después de haber sido agrupados con GROUP BY, es 
+igual a where, sin embargo se puede usar Fun.Agregadas.
+
