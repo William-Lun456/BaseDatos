@@ -1,0 +1,53 @@
+-Tipos de Subconsultas
+
+Con IN: Verifica si un valor está incluido en un conjunto de resultados.
+
+Con EXISTS: Comprueba si existen filas que cumplan una condición.
+
+IN compara valores.
+
+EXISTS evalúa la existencia de registros.
+
+Diferencia práctica:
+EXISTS suele ser más eficiente cuando el conjunto de datos es grande, mientras que IN es útil con listas pequeñas o valores únicos.
+
+-Funciones de Fecha
+
+Permiten trabajar con información temporal: extraer días, meses, años, calcular diferencias o sumar intervalos de tiempo.
+Ejemplos de funciones mencionadas:
+
+DAY, MONTH, YEAR, DATEADD, DATEDIFF, GETDATE.
+
+-Aplicaciones:
+
+Calcular la edad de una persona.
+
+Determinar fechas futuras o pasadas.
+
+Generar reportes con datos temporales.
+
+-Funciones de Cadena
+
+Se utilizan para manipular texto, limpiar o combinar información.
+Funciones explicadas:
+
+CONCAT (unir textos)
+
+LEN (longitud)
+
+SUBSTRING (extraer parte del texto)
+
+LOWER / UPPER (cambiar mayúsculas o minúsculas)
+
+LTRIM / RTRIM (eliminar espacios innecesarios)
+
+-Funciones de Conversión
+
+Transforman datos entre diferentes tipos o formatos.
+
+CAST: Conversión directa entre tipos.
+
+CONVERT: Permite formatos personalizados (por ejemplo, fechas).
+
+-Diferencia clave:
+CAST es más simple y estándar, mientras que CONVERT ofrece mayor control sobre el formato, especialmente en fechas.
