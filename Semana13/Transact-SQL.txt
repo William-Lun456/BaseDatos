@@ -1,0 +1,21 @@
+Transact-SQL :
+es un lenguaje de programación utilizado en SQL Server que permite no solo consultar bases de datos, 
+sino también automatizar procesos, manejar datos de manera dinámica y controlar la ejecución de instrucciones.
+1. Funciones
+
+Las funciones son bloques de código que realizan un cálculo o tarea específica y devuelven un valor.
+Son útiles cuando se necesita repetir una operación en distintas partes de la base de datos, como calcular totales, promedios o áreas.
+2. Procedimientos almacenados
+
+Los procedimientos almacenados son conjuntos de instrucciones SQL que se guardan en el servidor para ser ejecutados cuando se necesite.
+
+3. Manejo de variables
+
+Las variables en T-SQL sirven para guardar temporalmente información que se usará dentro de una consulta o programa.
+4. Condicional IF
+
+El condicional IF permite tomar decisiones dentro del código, con él se puede ejecutar un bloque de instrucciones solo si se cumple una condición.
+5. Cursores
+
+Los cursores son herramientas que permiten recorrer fila por fila una tabla o conjunto de resultados.
+Se usan cuando es necesario procesar registros individualmente, algo que no siempre se puede hacer con consultas tradicionales.
