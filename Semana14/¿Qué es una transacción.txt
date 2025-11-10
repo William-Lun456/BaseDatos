@@ -1,0 +1,26 @@
+¿Qué es una transacción?
+
+Una transacción es un conjunto de operaciones en la base de datos que se consideran una sola unidad de trabajo.
+La idea es:
+-O se ejecutan todas correctamente
+-O no se ejecuta ninguna
+Así se evita que la base de datos quede en un estado “a medias” o inconsistente.
+
+2. COMMIT: confirmar los cambios
+COMMIT es la orden que se usa para confirmar una transacción.
+Cuando todo salió bien
+Se decide “guardar” definitivamente los cambios
+A partir de ahí, esos cambios quedan permanentes en la base de datos
+
+ROLLBACK: deshacer los cambios
+ROLBACK sirve para deshacer la transacción.
+Si ocurre un error
+O te das cuenta de que no quieres aplicar esos cambios
+Entonces “regresas” la base de datos al estado en el que estaba antes de empezar la transacción
+Es como un ctrl+z pero a nivel de todas las operaciones de esa transacción.
+
+¿Por qué son tan importantes las transacciones?
+Porque ayudan a:
+Mantener la coherencia de los datos cuando hay varias operaciones relacionadas
+Proteger contra errores (fallos de sistema, errores de lógica, cortes de luz, etc.)
+Asegurar que las operaciones críticas (como transferencias, ventas, registros contables) se hagan de forma segura y confiable
