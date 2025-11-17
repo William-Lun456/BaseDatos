@@ -1,0 +1,14 @@
+TRIGGERS
+
+Los triggers en SQL Server son procedimientos almacenados especiales que se ejecutan 
+automáticamente cuando ocurre un evento en una tabla o vista, como INSERT, UPDATE o DELETE. 
+Su finalidad es automatizar procesos, mantener la integridad de los datos y aplicar reglas de 
+negocio que no pueden controlarse solo con restricciones.
+Tipos de Triggers
+1. AFTER Trigger
+Se ejecuta después de que una operación de modificación de datos se realiza exitosamente.
+Ideal para auditorías o acciones que dependen del resultado final.
+
+2. INSTEAD OF Trigger
+Se ejecuta en lugar de la operación que lo activa.
+Útil cuando se necesita reemplazar una acción
